@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainrot Translator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        textarea {
+            width: 80%;
+            height: 100px;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brainrot Translator 🧠</h1>
+    <textarea id="inputText" placeholder="Enter text to be brainrotted..."></textarea>
+    <br>
+    <button onclick="translateText()">Translate</button>
+    <br>
+    <textarea id="outputText" placeholder="Brainrotted text appears here..." readonly></textarea>
+
+    <script>
+        function brainrotify(text) {
+            const transformations = [
+                t => t.replace(/you/gi, "u"),
+                t => t.replace(/and/gi, "&"),
+                t => t.replace(/is/gi, "iz"),
